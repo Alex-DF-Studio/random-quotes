@@ -1,6 +1,7 @@
 body {
   font-family: Arial, sans-serif;
-  background-color: #f0f0f0;
+  background-color: #333; /* Dark background color */
+  color: #fff; /* Text color */
 }
 
 .container {
@@ -11,7 +12,6 @@ body {
 
 .btn {
   padding: 10px 20px;
-  margin: 5px;
   font-size: 16px;
   background-color: #007bff;
   color: #fff;
@@ -34,7 +34,7 @@ body {
 
 .quote::before,
 .quote::after {
-  content: ' ';
+  content: '"';
 }
 
 .favorites-container {
@@ -54,4 +54,11 @@ body {
 
 .author {
   font-style: italic;
+}
+
+.star-icon {
+  font-size: 30px;
+  color: yellow;
+  vertical-align: middle;
+  cursor: pointer;
 }
