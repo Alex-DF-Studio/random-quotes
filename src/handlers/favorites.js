@@ -12,9 +12,8 @@ function toggleFavorite(quote, btn, container) {
   }
 }
 
-function handleFevorite(isFavorite) {
+function handleFavorite(isFavorite) {
   showFavoriteBtn(favoriteBtn)
-
   toggleFavoriteBtnIcon(isFavorite, favoriteBtn)
 }
 
@@ -26,6 +25,7 @@ function toggleFavoriteBtnIcon(isFavorite, el) {
 function showFavoriteBtn(btn) {
   btn.style.display = 'inline-block'
 }
+
 function hideFavoriteBtn(btn) {
   btn.style.display = 'none'
 }
@@ -34,8 +34,8 @@ function showFavoriteCard(text, author, container) {
   const favoriteCard = document.createElement('div')
   favoriteCard.classList.add('favorite-card')
   favoriteCard.innerHTML = `
-    <p>${text}</p>
-    <p class="author">${author}</p>
+      <p>${text}</p>
+      <p class="author">${author}</p>
     `
   container.appendChild(favoriteCard)
 }
@@ -49,4 +49,4 @@ function hideFavoriteCard(text) {
   })
 }
 
-export { handleFevorite, toggleFavorite, hideFavoriteBtn }
+export { handleFavorite, toggleFavorite, hideFavoriteBtn }

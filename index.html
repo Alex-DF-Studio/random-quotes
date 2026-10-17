@@ -6,8 +6,8 @@
     <title>Random Quotes</title>
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.css"
-      integrity="sha512-U9Y1sGB3sLIpZm3ePcrKbXVhXlnQNcuwGQJ2WjPjnp6XHqVTdgIlbaDzJXJIAuCTp3y22t+nhI4B88F/5ldjFA=="
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
@@ -18,11 +18,13 @@
       <h1>Random Quotes</h1>
       <p id="quote" class="quote">Click the button to get a random quote</p>
       <p id="quote-author"></p>
-      <button id="generate-btn" class="btn">Generate Quotes</button>
+      <button id="generate-btn" class="btn">Generate Quote</button>
       <i id="favorite-btn" class="far fa-star star-icon"></i>
     </div>
 
-    <div class="favorites-container" id="favorites-container"></div>
+    <div class="favorites-container" id="favorites-container">
+      <!-- Favorite quotes will be dynamically added here -->
+    </div>
     <script type="module" src="index.js"></script>
   </body>
 </html>
